@@ -12,7 +12,7 @@ How can I fix this mistake? What is the name of the foreign key? Would the forei
 
   Researched answer:The foreign key called the child table and would be on the Cohort model. If not added you need execute the SQL commands to enable. 
 
-
+If you require to add the foriegn key yoy need to pass a migration.
 
 2. Which RESTful routes must always be passed params? Why?
 
@@ -20,7 +20,7 @@ How can I fix this mistake? What is the name of the foreign key? Would the forei
 
   Researched answer:Show,edit, update and destroy must always be passed params because forms cannot execute requests.
 
-
+Have to Know which iteam you are updating unless yiu have a param
 
 3. Name three rails generator commands. What is created by each?
 
@@ -30,24 +30,24 @@ How can I fix this mistake? What is the name of the foreign key? Would the forei
   Researched answer:Three generator commands: rails g rspec:install that's is used to create a testing ruby code,
    rails g model that helps find, upate, or remove data and rails g db:migrate used 
   for changing an application's database that can be used to create boilerplate folders and files for a project.  
+  *view folder
 
 4. Consider the Rails routes below. What is the name of the controller method that would be called by each route? What action would each of the controller methods perform?
 
-method="GET"  /students          
-INDEX = "Show" all data of all students
-method="Post"   /students       
-CREATE = "Post"  new student
-method="GET"    /students/new
-NEW = creates a new form (new student)
-method="GET"    /students/2  
-SHOW = one item or student
-method="GET"    /students/2/edit    
-SHOW = "Post"
-method="PATCH" /students/2  
-EDIT = Update    
-UPDATE= modifies item
-method="DELETE" /students/2      
-DESTROY = removes item 
+method="GET"  /students          INDEX = "Show" all data of all students
+
+method="Post"   /students       CREATE = "Post"  new student
+
+method="GET"    /students/new NEW = creates a new form (new student)NEW = creates a new form (new student)
+
+method="GET"    /students/2  SHOW = one item or student
+
+method="GET"    /students/2/edit    SHOW = "Post"
+
+method="PATCH" /students/2  EDIT = Update UPDATE= modifies item
+
+method="DELETE" /students/2      DESTROY = removes item 
+
 
 
 5. As a developer, you are making an application to manage your to do list. Create 10 user stories that will help you get your application started. Read more about [user stories](https://www.atlassian.com/agile/project-management/user-stories).
